@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.AddAchivement"
+    tools:showIn="@layout/activity_add_achivement">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textColor="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="62dp" />
+        <EditText
+            android:id="@+id/etID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/colorPrimaryDark"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="141dp"
+            tools:layout_editor_absoluteY="61dp" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="@color/colorPrimaryDark"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="62dp" />
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="141dp"
+                tools:layout_editor_absoluteY="61dp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="114dp" />
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/colorPrimaryDark"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="141dp"
+            tools:layout_editor_absoluteY="104dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXP"
+            android:textColor="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="165dp" />
+        <EditText
+            android:id="@+id/etEXP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteX="141dp"
+            tools:layout_editor_absoluteY="165dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        <Button
+            android:id="@+id/btnAllAchivement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:onClick="allAchivement"
+            android:text="My Achivement"
+            tools:layout_editor_absoluteX="245dp"
+            tools:layout_editor_absoluteY="251dp" />
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:onClick="addAchivement"
+            android:text="Submit"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="251dp" />
+    </LinearLayout>
+</LinearLayout>
+    </android.support.constraint.ConstraintLayout>

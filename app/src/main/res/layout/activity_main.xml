@@ -1,0 +1,175 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/unameDashboard"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorBackground"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp">
+            <fragment android:name="com.example.nicenicenice.projectpam.fragment.PlayFragment"
+                android:id="@+id/play_fragment"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_play" />
+            <fragment android:name="com.example.nicenicenice.projectpam.fragment.LeaderboardFragment"
+                android:id="@+id/leaderboard_fragment"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_leaderboard"/>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Play"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Leaderboard"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp">
+            <fragment android:name="com.example.nicenicenice.projectpam.fragment.AchivementFragment"
+                android:id="@+id/achivement_fragment"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_achivement"/>
+            <fragment android:name="com.example.nicenicenice.projectpam.fragment.ContactFragment"
+                android:id="@+id/contact_fragment"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_contact"/>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Achivement"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Contact Us"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp">
+            <fragment android:name="com.example.nicenicenice.projectpam.fragment.NewsFragment"
+                android:id="@+id/news_fragment"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_news" />
+            <fragment android:name="com.example.nicenicenice.projectpam.fragment.SettingFragment"
+                android:id="@+id/setting_fragment"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_setting"/>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Phone Contact"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Setting"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Go To CIS"
+        android:id="@+id/btnToCis"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:onClick="openCIS"
+        android:background="@color/colorBackground"/>
+    </LinearLayout>
+
+</ScrollView>
+
+
